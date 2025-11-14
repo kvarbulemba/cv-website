@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Денисенко Ілля | Illia Denysenko - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind 'gray-50' */
+        }
+        html[lang="uk"] [lang="en"] {
+            display: none;
+        }
+
+        html[lang="en"] [lang="uk"] {
+            display: none;
+        }
+
+        .lang-btn-active {
+            background-color: #2563eb; /* Tailwind 'blue-600' */
+            color: white;
+            font-weight: 600;
+        }
+
+        .lang-btn-inactive {
+            background-color: #e5e7eb; /* Tailwind 'gray-200' */
+            color: #374151; /* Tailwind 'gray-700' */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="max-w-6xl mx-auto p-4 sm:p-8 md:p-12 bg-white shadow-2xl rounded-lg my-8">
+
+        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
+
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-700">
+                    <span lang="uk">Денисенко Ілля</span>
+                    <span lang="en">Illia Denysenko</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mt-2">
+                    <span lang="uk">Студент | Відкритий до пропозицій</span>
+                    <span lang="en">Student | Open to work</span>
+                </p>
+            </div>
+            
+            <div class="flex space-x-2 mt-4 sm:mt-0 flex-shrink-0">
+                <button id="btn-uk"
+                        onclick="setLanguage('uk')"
+                        class="lang-btn-active px-4 py-2 rounded-lg transition-colors duration-200">
+                    🇺🇦 UA
+                </button>
+                <button id="btn-en"
+                        onclick="setLanguage('en')"
+                        class="lang-btn-inactive px-4 py-2 rounded-lg transition-colors duration-200">
+                    🇬🇧 EN
+                </button>
+            </div>
+        </header>
+
+        <div class="flex flex-col md:flex-row-reverse md:space-x-reverse md:space-x-12">
+
+            <aside class="md:w-1/3 w-full p-6 bg-gray-50 rounded-lg shadow-inner mb-8 md:mb-0">
+                
+                <section>
+                    <h2 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2 mb-4">
+                        <span lang="uk">Контакти</span>
+                        <span lang="en">Contact</span>
+                    </h2>
+                    <div class="space-y-3 text-gray-700">
+                        <div class="flex items-center space-x-3">
+
+                            <svg class="w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                            <span>
+                                <span lang="uk">Місто: Київ, Україна</span>
+                                <span lang="en">City: Kyiv, Ukraine</span>
+                            </span>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91A2.25 2.25 0 012.25 6.993v-.243z" /></svg>
+                            <a href="mailto:your.email@example.com" class="text-blue-600 hover:underline">denysenko.ikw@gmail.com</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                            <a href="#" class="text-blue-600 hover:underline">www.linkedin.com/in/illia-denysenko-aa2056375</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mt-8">
+                    <h2 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2 mb-4">
+                        <span lang="uk">Професійні навички</span>
+                        <span lang="en">Professional Skills</span>
+                    </h2>
+                    <ul class="list-disc list-outside space-y-2 pl-5 text-gray-700">
+                        <li>
+                            <span lang="uk">Знання принципів ООП та структурного програмування</span>
+                            <span lang="en">Knowledge of OOP and structured programming</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Навички налагодження, тестування та технічної документації</span>
+                            <span lang="en">Debugging, testing, and technical documentation skills</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Ручне складання, пайка та проєктування друкованих плат (EasyEDA)</span>
+                            <span lang="en">Manual assembly, soldering, and PCB design (EasyEDA)</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Мови програмування: C, Python, Java, HDL</span>
+                            <span lang="en">Programming languages: C, Python, Java, HDL</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Пакет MS Office: Excel, PowerPoint, Word, Visio</span>
+                            <span lang="en">MS Office: Excel, PowerPoint, Word, Visio</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Розробка систем на базі Arduino, мікроелектроніка</span>
+                            <span lang="en">Arduino-based system design and microelectronics</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Інструменти моделювання: Proteus, MultiSim, Arduino IDE</span>
+                            <span lang="en">Simulation tools: Proteus, MultiSim, Arduino IDE</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Мови: українська - рідна; англійська - Upper-Intermediate</span>
+                            <span lang="en">Languages: Ukrainian – native; English – Upper-Intermediate</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="mt-8">
+                    <h2 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2 mb-4">
+                        <span lang="uk">Особисті якості</span>
+                        <span lang="en">Personal Qualities</span>
+                    </h2>
+                    <ul class="list-disc list-outside space-y-2 pl-5 text-gray-700">
+                        <li>
+                            <span lang="uk">Відповідальний</span>
+                            <span lang="en">Responsible</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Працьовитий</span>
+                            <span lang="en">Hardworking</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Комунікабельний</span>
+                            <span lang="en">Communicative</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Креативний</span>
+                            <span lang="en">Creative</span>
+                        </li>
+                        <li>
+                            <span lang="uk">Уважний до деталей</span>
+                            <span lang="en">Detail-oriented</span>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main class="md:w-2/3 w-full">
+                
+                <section class="mb-8">
+                    <h2 class="text-3xl font-semibold text-gray-900 border-b-4 border-gray-200 pb-2 mb-6">
+                        <span lang="uk">Досвід роботи</span>
+                        <span lang="en">Work Experience</span>
+                    </h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">
+                            <span lang="uk">Старший лаборант кафедри конструювання електронно-обчислювальної апаратури (КЕОА) факультету електроніки (ФЕЛ)</span>
+                            <span lang="en">Senior Laboratory Assistant, Faculty of Electronics Department of Computer Hardware Design (KEOA)</span>
+                        </h3>
+                        <p class="text-lg text-gray-700">
+                            <span lang="uk">Національний технічний університет України “КПІ ім. Ігоря Сікорського”</span>
+                            <span lang="en">National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”</span>
+                        </p>
+                        <p class="text-md text-gray-500 italic">
+                            <span lang="uk">Листопад 2025 – теперішній час</span>
+                            <span lang="en">November 2025 – Present</span>
+                        </p>
+                        <p class="mt-2" lang="uk">Обов’язки:</p>
+                        <p class="mt-2" lang="en">Responsibilities:</p>
+                        <ul class="list-disc list-outside space-y-1 pl-5 mt-2 text-gray-700">
+                            <li>
+                                <span lang="uk">Допомога у тестуванні, діагностиці та прототипуванні друкованих плат для студентських і наукових проєктів.</span>
+                                <span lang="en">Assisted in PCB testing, diagnostics, and prototyping for student and research projects.</span>
+                            </li>
+                            <li>
+                                <span lang="uk">Контроль дотримання стандартів безпеки та технічного стану лабораторного обладнання.</span>
+                                <span lang="en">Ensured compliance with safety standards and equipment maintenance protocols.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">
+                            <span lang="uk">Молодший регулювальник радіоапаратури та приладів</span>
+                            <span lang="en">Junior Radio Equipment and Instruments Adjuster</span>
+                        </h3>
+                        <p class="text-lg text-gray-700">
+                            <span lang="uk">ТОВ «Ajax Manufacturing», Київ</span>
+                            <span lang="en">Ajax Manufacturing LLC, Kyiv</span>
+                        </p>
+                        <p class="text-md text-gray-500 italic">
+                            <span lang="uk">Липень 2025 – Вересень 2025</span>
+                            <span lang="en">July 2025 – September 2025</span>
+                        </p>
+                        <p class="mt-2" lang="uk">Обов'язки:</p>
+                        <p class="mt-2" lang="en">Responsibilities:</p>
+                        <ul class="list-disc list-outside space-y-1 pl-5 mt-2 text-gray-700">
+                            <li>
+                                <span lang="uk">Проведення тестування, калібрування та налаштування радіоелектронного обладнання.</span>
+                                <span lang="en">Tested, calibrated, and adjusted radio equipment and instruments.</span>
+                            </li>
+                            <li>
+                                <span lang="uk">Ручне тестування апаратури з використанням спеціалізованих випробувальних стендів.</span>
+                                <span lang="en">Manual equipment testing with specific testbenches.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">
+                            <span lang="uk">Практикант (виробнича практика в межах освітньої програми Київського електромеханічного коледжу)</span>
+                            <span lang="en">Intern</span>
+                        </h3>
+                        <p class="text-lg text-gray-700">
+                            <span lang="uk">ТОВ «Ярмолинецький консервний завод», Київ</span>
+                            <span lang="en">Yarmolynets Canning Plant LLC, Kyiv</span>
+                        </p>
+                        <p class="text-md text-gray-500 italic">
+                            <span lang="uk">Вересень 2024 – Листопад 2024</span>
+                            <span lang="en">September 2024 – November 2024</span>
+                        </p>
+                        <p class="mt-2" lang="uk">Обов'язки:</p>
+                        <p class="mt-2" lang="en">Responsibilities:</p>
+                        <ul class="list-disc list-outside space-y-1 pl-5 mt-2 text-gray-700">
+                            <li>
+                                <span lang="uk">Аналіз і систематизація даних у середовищі Excel.</span>
+                                <span lang="en">Managed and analyzed data using Excel.</span>
+                            </li>
+                            <li>
+                                <span lang="uk">Технічне обслуговування комп’ютерного обладнання та програмного забезпечення.</span>
+                                <span lang="en">Performed PC hardware and software maintenance.</span>
+                            </li>
+                            <li>
+                                <span lang="uk">Проведення онлайн-досліджень для підтримки бізнес-процесів підприємства.</span>
+                                <span lang="en">Conducted online research to support business needs.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-3xl font-semibold text-gray-900 border-b-4 border-gray-200 pb-2 mb-6">
+                        <span lang="uk">Освіта</span>
+                        <span lang="en">Education</span>
+                    </h2>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">
+                            <span lang="uk">Національний технічний університет України “Київський політехнічний інститут імені Ігоря Сікорського” (НТУУ «КПІ»), м. Київ</span>
+                            <span lang="en">National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute” (NTUU KPI), Kyiv</span>
+                        </h3>
+                        <p class="text-md text-gray-500 italic">
+                            <span lang="uk">Вересень 2025 – теперішній час</span>
+                            <span lang="en">September 2025 – Present</span>
+                        </p>
+                        <ul class="list-none space-y-1 mt-2 text-gray-700">
+                            <li>
+                                <strong>
+                                    <span lang="uk">Ступінь:</span>
+                                    <span lang="en">Degree:</span>
+                                </strong>
+                                <span lang="uk"> Бакалавр (денна форма навчання)</span>
+                                <span lang="en"> Bachelor (full-time)</span>
+                            </li>
+                            <li>
+                                <strong>
+                                    <span lang="uk">Факультет:</span>
+                                    <span lang="en">Faculty:</span>
+                                </strong>
+                                <span lang="uk"> Факультет електроніки (ФЕЛ)</span>
+                                <span lang="en"> Faculty of Electronics (FEL)</span>
+                            </li>
+                            <li>
+                                <strong>
+                                    <span lang="uk">Спеціальність:</span>
+                                    <span lang="en">Specialty:</span>
+                                </strong>
+                                <span lang="uk"> G5 – Електроніка, електронні комунікації, приладобудування та радіотехніка</span>
+                                <span lang="en"> G5 – Electronics, Electronic Communications, Instrumentation and Radio Engineering</span>
+                            </li>
+                            <li>
+                                <strong>
+                                    <span lang="uk">Освітня програма:</span>
+                                    <span lang="en">Program:</span>
+                                </strong>
+                                <span lang="uk"> Інформаційно-обчислювальні засоби радіоелектронних систем</span>
+                                <span lang="en"> Information-Computing Means of Radio Electronic Systems</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">
+                            <span lang="uk">Київський електромеханічний фаховий коледж (КЕМТ), м. Київ</span>
+                            <span lang="en">Kyiv Electromechanical College (KEMT), Kyiv</span>
+                        </h3>
+                        <p class="text-md text-gray-500 italic">
+                            <span lang="uk">Вересень 2021 – Червень 2025</span>
+                            <span lang="en">September 2021 – June 2025</span>
+                        </p>
+                        <ul class="list-none space-y-1 mt-2 text-gray-700">
+                            <li>
+                                <strong>
+                                    <span lang="uk">Ступінь:</span>
+                                    <span lang="en">Degree:</span>
+                                </strong>
+                                <span lang="uk"> Фаховий молодший бакалавр (денна форма навчання)</span>
+                                <span lang="en"> Professional Junior Bachelor (full-time)</span>
+                            </li>
+                            <li>
+                                <strong>
+                                    <span lang="uk">Відділення:</span>
+                                    <span lang="en">Department:</span>
+                                </strong>
+                                <span lang="uk"> Відділення автоматизованих систем управління</span>
+                                <span lang="en"> Department of Automated Control Systems</span>
+                            </li>
+                            <li>
+                                <strong>
+                                    <span lang="uk">Спеціальність:</span>
+                                    <span lang="en">Specialty:</span>
+                                </strong>
+                                <span lang="uk"> F7 – Комп’ютерна інженерія</span>
+                                <span lang="en"> F7 – Computer Engineering</span>
+                            </li>
+                            <li>
+                                <strong>
+                                    <span lang="uk">Освітня програма:</span>
+                                    <span lang="en">Program:</span>
+                                </strong>
+                                <span lang="uk"> Обслуговування комп’ютерних систем і мереж</span>
+                                <span lang="en"> Maintenance of Computer Systems and Networks</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800">
+                            <span lang="uk">Спеціалізована школа №196, м. Київ (денна форма навчання)</span>
+                            <span lang="en">Specialized School №196, Kyiv (full-time)</span>
+                        </h3>
+                        <p class="text-md text-gray-500 italic">
+                            <span lang="uk">Вересень 2012 – Травень 2021</span>
+                            <span lang="en">September 2012 – May 2021</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold text-gray-900 border-b-4 border-gray-200 pb-2 mb-6">
+                        <span lang="uk">Додаткова освіта</span>
+                        <span lang="en">Additional Education</span>
+                    </h2>
+                    <ul class="list-none space-y-4">
+                        <li>
+                            <p class="text-lg font-medium text-gray-800">
+                                <span lang="uk">Основи програмування мовою C#</span>
+                                <span lang="en">Fundamentals of Programming in C#</span>
+                            </p>
+                            <p class="text-gray-600">
+                                <span lang="uk">IT Academy Contact, Київ</span>
+                                <span lang="en">IT Academy Contact, Kyiv</span>
+                                <span class="text-gray-500 italic"> — 
+                                    <span lang="uk">вересень 2018 – травень 2019</span>
+                                    <span lang="en">Sep 2018 – May 2019</span>
+                                </span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-lg font-medium text-gray-800">
+                                <span lang="uk">Основи Linux</span>
+                                <span lang="en">Fundamentals of Linux</span>
+                            </p>
+                            <p class="text-gray-600">
+                                <span lang="uk">Prometheus</span>
+                                <span lang="en">Prometheus</span>
+                                <span class="text-gray-500 italic"> — 
+                                    <span lang="uk">січень – квітень 2024</span>
+                                    <span lang="en">Jan – Apr 2024</span>
+                                </span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-lg font-medium text-gray-800">
+                                <span lang="uk">JavaScript</span>
+                                <span lang="en">JavaScript</span>
+                            </p>
+                            <p class="text-gray-600">
+                                <span lang="uk">Main IT School</span>
+                                <span lang="en">Main IT School</span>
+                                <span class="text-gray-500 italic"> — 
+                                    <span lang="uk">жовтень – грудень 2024</span>
+                                    <span lang="en">Oct – Dec 2024</span>
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="mt-8">
+                    <h2 class="text-3xl font-semibold text-gray-900 border-b-4 border-gray-200 pb-2 mb-6">
+                        <span lang="uk">Публікації</span>
+                        <span lang="en">Publications</span>
+                    </h2>
+                    <div class="text-gray-700">
+                        <p class="font-medium" lang="uk">
+                            Денисенко Ілля. Robotic Integration in Our Lives. // Визначні досягнення в науці і техніці: матеріали XI Всеукраїнської студентської науково-практичної онлайн-конференції (12 листопада 2025 р., Київ) [Електронне видання]. – Київ: КПІ ім. Ігоря Сікорського, 2025. – С. 26–27.
+                        </p>
+                        <p class="font-medium" lang="en">
+                            Denysenko, Illia. Robotic Integration in Our Lives. In Significant Achievements in Science and Technology: Proceedings of the 11th All-Ukrainian Student Scientific and Practical Online Conference (Kyiv, November 12, 2025) [Electronic edition]. Kyiv: Igor Sikorsky Kyiv Polytechnic Institute, 2025, pp. 26–27.
+                        </p>
+
+                        <a href="https://kamts1.kpi.ua/wp-content/uploads/2025/11/zbirnyk_11-i_studentskoi-konferentsii-2025.pdf" class="text-blue-600 hover:underline break-all">
+                            <span lang="uk">Доступно онлайн: link</span>
+                            <span lang="en">Available online at: link</span>
+                        </a>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // langchange_func
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+
+            // Отримуємо кнопки
+            const btnUk = document.getElementById('btn-uk');
+            const btnEn = document.getElementById('btn-en');
+
+            if (lang === 'uk') {
+                btnUk.classList.add('lang-btn-active');
+                btnUk.classList.remove('lang-btn-inactive');
+                btnEn.classList.add('lang-btn-inactive');
+                btnEn.classList.remove('lang-btn-active');
+            } else {
+                btnEn.classList.add('lang-btn-active');
+                btnEn.classList.remove('lang-btn-inactive');
+                btnUk.classList.add('lang-btn-inactive');
+                btnUk.classList.remove('lang-btn-active');
+            }
+        }
+    </script>
+
+</body>
+</html>
